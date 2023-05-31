@@ -8,9 +8,11 @@
 import Foundation
 
 struct Notice {
-    var title: String
-    var body: String
+    var notificationType: String
+    var notificationBody: String
     var imageUrl: String
     var linkUrl: String
     var bannerType: NoticeBannerType
+    var periodStart: Int
+    
 }

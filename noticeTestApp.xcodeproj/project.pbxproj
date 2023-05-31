@@ -21,11 +21,20 @@
 		FD87AC722A25CC530086C0ED /* NoticeBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC712A25CC530086C0ED /* NoticeBannerType.swift */; };
 		FD87AC742A25E76B0086C0ED /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC732A25E76B0086C0ED /* ApiEndPoint.swift */; };
 		FD87AC812A25F0BE0086C0ED /* NewsApiDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC802A25F0BE0086C0ED /* NewsApiDataStore.swift */; };
+		FD960A0F2A2743B3000C3BE3 /* MainAppApiAuthentificationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD960A0E2A2743B3000C3BE3 /* MainAppApiAuthentificationDataStore.swift */; };
+		FD960A112A274D04000C3BE3 /* NotificationTypeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD960A102A274D04000C3BE3 /* NotificationTypeTranslator.swift */; };
+		FD960A132A274D37000C3BE3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD960A122A274D37000C3BE3 /* NotificationType.swift */; };
 		FDAD4B582A25F6820044C32B /* GetNewsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD4B572A25F6820044C32B /* GetNewsRequestModel.swift */; };
 		FDAD4B5A2A25F6E80044C32B /* GetNewsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD4B592A25F6E80044C32B /* GetNewsResponseModel.swift */; };
 		FDAD4B5C2A25F73D0044C32B /* GetNewsResponseModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD4B5B2A25F73D0044C32B /* GetNewsResponseModelItem.swift */; };
 		FDAD4B5E2A25F87F0044C32B /* ApiResponseDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD4B5D2A25F87F0044C32B /* ApiResponseDateModel.swift */; };
 		FDAD4B612A2601F40044C32B /* ApiResultCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD4B602A2601F40044C32B /* ApiResultCode.swift */; };
+		FDD527482A26CC40006799D1 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD527472A26CC40006799D1 /* NewsRepository.swift */; };
+		FDD5274A2A26CCEC006799D1 /* NewsRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD527492A26CCEC006799D1 /* NewsRepositoryInterface.swift */; };
+		FDD5274C2A26CE37006799D1 /* ApiAuthentificationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD5274B2A26CE37006799D1 /* ApiAuthentificationDataStore.swift */; };
+		FDD5274E2A26CE67006799D1 /* ApiAuthentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD5274D2A26CE67006799D1 /* ApiAuthentification.swift */; };
+		FDD527512A26CFA7006799D1 /* NewsTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD527502A26CFA7006799D1 /* NewsTranslator.swift */; };
+		FDD527532A26D101006799D1 /* BannerTypeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD527522A26D101006799D1 /* BannerTypeTranslator.swift */; };
 		FDED0AC32A249269003CE3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED0AC22A249269003CE3D4 /* AppDelegate.swift */; };
 		FDED0AC52A249269003CE3D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED0AC42A249269003CE3D4 /* SceneDelegate.swift */; };
 		FDED0AC72A249269003CE3D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED0AC62A249269003CE3D4 /* ViewController.swift */; };
@@ -51,11 +60,20 @@
 		FD87AC712A25CC530086C0ED /* NoticeBannerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBannerType.swift; sourceTree = "<group>"; };
 		FD87AC732A25E76B0086C0ED /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
 		FD87AC802A25F0BE0086C0ED /* NewsApiDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiDataStore.swift; sourceTree = "<group>"; };
+		FD960A0E2A2743B3000C3BE3 /* MainAppApiAuthentificationDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppApiAuthentificationDataStore.swift; sourceTree = "<group>"; };
+		FD960A102A274D04000C3BE3 /* NotificationTypeTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTypeTranslator.swift; sourceTree = "<group>"; };
+		FD960A122A274D37000C3BE3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		FDAD4B572A25F6820044C32B /* GetNewsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsRequestModel.swift; sourceTree = "<group>"; };
 		FDAD4B592A25F6E80044C32B /* GetNewsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsResponseModel.swift; sourceTree = "<group>"; };
 		FDAD4B5B2A25F73D0044C32B /* GetNewsResponseModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsResponseModelItem.swift; sourceTree = "<group>"; };
 		FDAD4B5D2A25F87F0044C32B /* ApiResponseDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseDateModel.swift; sourceTree = "<group>"; };
 		FDAD4B602A2601F40044C32B /* ApiResultCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResultCode.swift; sourceTree = "<group>"; };
+		FDD527472A26CC40006799D1 /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
+		FDD527492A26CCEC006799D1 /* NewsRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryInterface.swift; sourceTree = "<group>"; };
+		FDD5274B2A26CE37006799D1 /* ApiAuthentificationDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthentificationDataStore.swift; sourceTree = "<group>"; };
+		FDD5274D2A26CE67006799D1 /* ApiAuthentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthentification.swift; sourceTree = "<group>"; };
+		FDD527502A26CFA7006799D1 /* NewsTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTranslator.swift; sourceTree = "<group>"; };
+		FDD527522A26D101006799D1 /* BannerTypeTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTypeTranslator.swift; sourceTree = "<group>"; };
 		FDED0ABF2A249269003CE3D4 /* noticeTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noticeTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDED0AC22A249269003CE3D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDED0AC42A249269003CE3D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +118,9 @@
 			children = (
 				FD87AC6F2A25CC2D0086C0ED /* Notice.swift */,
 				FD87AC712A25CC530086C0ED /* NoticeBannerType.swift */,
+				FD960A122A274D37000C3BE3 /* NotificationType.swift */,
 				FD87AC772A25EF200086C0ED /* Api */,
+				FDD5274D2A26CE67006799D1 /* ApiAuthentification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +128,8 @@
 		FD87AC762A25EF130086C0ED /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FDD527472A26CC40006799D1 /* NewsRepository.swift */,
+				FDD527492A26CCEC006799D1 /* NewsRepositoryInterface.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -126,6 +148,8 @@
 			children = (
 				FD87AC732A25E76B0086C0ED /* ApiEndPoint.swift */,
 				FD87AC802A25F0BE0086C0ED /* NewsApiDataStore.swift */,
+				FDD5274B2A26CE37006799D1 /* ApiAuthentificationDataStore.swift */,
+				FD960A0E2A2743B3000C3BE3 /* MainAppApiAuthentificationDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -197,6 +221,16 @@
 			path = ResultCode;
 			sourceTree = "<group>";
 		};
+		FDD5274F2A26CF8D006799D1 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				FDD527502A26CFA7006799D1 /* NewsTranslator.swift */,
+				FDD527522A26D101006799D1 /* BannerTypeTranslator.swift */,
+				FD960A102A274D04000C3BE3 /* NotificationTypeTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
 		FDED0AB62A249269003CE3D4 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +260,7 @@
 				FDED0AD02A24926B003CE3D4 /* Info.plist */,
 				FD87AC782A25EF4B0086C0ED /* DataStore */,
 				FD87AC762A25EF130086C0ED /* Repository */,
+				FDD5274F2A26CF8D006799D1 /* Translator */,
 				FD87AC752A25EF060086C0ED /* Model */,
 				FD87AC7E2A25EFEB0086C0ED /* UI */,
 				FD87AC7C2A25EFC30086C0ED /* ViewController */,
@@ -352,21 +387,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD5274A2A26CCEC006799D1 /* NewsRepositoryInterface.swift in Sources */,
 				FD87AC442A257CF50086C0ED /* NoticeView.swift in Sources */,
+				FDD527512A26CFA7006799D1 /* NewsTranslator.swift in Sources */,
 				FD87AC742A25E76B0086C0ED /* ApiEndPoint.swift in Sources */,
+				FD960A112A274D04000C3BE3 /* NotificationTypeTranslator.swift in Sources */,
 				FDAD4B612A2601F40044C32B /* ApiResultCode.swift in Sources */,
 				FD87AC4A2A257EED0086C0ED /* NotiveBackgroundView.swift in Sources */,
 				FD87AC6A2A25B5640086C0ED /* NewsView.swift in Sources */,
 				FD87AC722A25CC530086C0ED /* NoticeBannerType.swift in Sources */,
 				FD87AC702A25CC2D0086C0ED /* Notice.swift in Sources */,
 				FDED0AC72A249269003CE3D4 /* ViewController.swift in Sources */,
+				FDD527482A26CC40006799D1 /* NewsRepository.swift in Sources */,
 				FDAD4B582A25F6820044C32B /* GetNewsRequestModel.swift in Sources */,
 				FDED0AC32A249269003CE3D4 /* AppDelegate.swift in Sources */,
+				FDD527532A26D101006799D1 /* BannerTypeTranslator.swift in Sources */,
 				FDED0AC52A249269003CE3D4 /* SceneDelegate.swift in Sources */,
 				FDAD4B5A2A25F6E80044C32B /* GetNewsResponseModel.swift in Sources */,
 				FD87AC632A2586BD0086C0ED /* TableViewCell.swift in Sources */,
+				FD960A132A274D37000C3BE3 /* NotificationType.swift in Sources */,
+				FDD5274E2A26CE67006799D1 /* ApiAuthentification.swift in Sources */,
+				FD960A0F2A2743B3000C3BE3 /* MainAppApiAuthentificationDataStore.swift in Sources */,
 				FD87AC482A257D2A0086C0ED /* NibView.swift in Sources */,
 				FDAD4B5E2A25F87F0044C32B /* ApiResponseDateModel.swift in Sources */,
+				FDD5274C2A26CE37006799D1 /* ApiAuthentificationDataStore.swift in Sources */,
 				FD87AC812A25F0BE0086C0ED /* NewsApiDataStore.swift in Sources */,
 				FDAD4B5C2A25F73D0044C32B /* GetNewsResponseModelItem.swift in Sources */,
 			);

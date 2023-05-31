@@ -13,7 +13,7 @@ enum ApiEndPoint {
     func url() -> String {
         switch self {
         case .GetNotice:
-            return "https://api/v2/getnotice.json"
+            return "http://localhost:3001/getnotice.json"
         }
     }
 }

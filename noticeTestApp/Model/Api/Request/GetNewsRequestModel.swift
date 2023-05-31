@@ -13,8 +13,8 @@ class GetNewsRequestModel {
 
     func toParams() -> [String: Any] {
         return [
-            "userId": userId,
-            "userToken": userToken
+            "user_id": userId,
+            "user_token": userToken
         ]
     }
 }
