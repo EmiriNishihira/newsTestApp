@@ -16,6 +16,6 @@ class NewsTranslator {
         let linkUrl = input.linkUrl ?? ""
         let bannerType = BannerTypeTranslator.translate(input: input.bannerType)
         let periodStart = input.periodStart?.sec ?? 0
-        return Notice(notificationType: notificationType.rawValue, notificationBody: notificationBody, imageUrl: imageUrl, linkUrl: linkUrl, bannerType: bannerType, periodStart: periodStart)
+        return Notice(notificationType: notificationType, notificationBody: notificationBody, imageUrl: imageUrl, linkUrl: linkUrl, bannerType: bannerType, periodStart: periodStart)
     }
 }

@@ -19,7 +19,7 @@ class NotificationTypeTranslator {
         case 3:
             return .survey
         default:
-            return .none
+            return .news
         }
     }
 }

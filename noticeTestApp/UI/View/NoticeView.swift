@@ -10,42 +10,45 @@ import UIKit
 class NoticeView: NibView {
 
     @IBOutlet weak var tableView: UITableView!
-    let titleList = ["重要", "ニュース", "アップデート", "アンケート"]
-    let imageList = ["a", "b", "c", "d"]
-    let bodyList = ["重要です", "ニュースです", "アップデートです", "アンケートです"]
     let noticeCell = "NoticeCell"
-    private let newsRepository = NewsRepository(apiAuthentificationDataStore: MainAppApiAuthentificationDataStore())
-    private var notice: [Notice] = []
-    var notificationBodyList: [String]?
+    var notice: [Notice] = [] {
+        didSet {
+            setUp()
+            tableView.reloadData()
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUp()
+
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setUp()
+        
     }
 
-    func setUp() {
+    private func setUp() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: noticeCell)
-        fetchNotice()
     }
 
-    func fetchNotice() {
-        newsRepository.getNews { notice in
-            self.notice = notice
-            let notificationBodyList = notice.map { $0.notificationBody }
-            self.notificationBodyList = notificationBodyList
-            print("NotificationBodyListの中身", self.notificationBodyList)
-        } onError: {
-            print("データ取得できませんでした")
+    func getImageFromURL(url: URL, completion: @escaping (UIImage?) -> Void) {
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    completion(image)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
         }
-
     }
+
+
 }
 
 extension NoticeView: UITableViewDelegate {
@@ -53,17 +56,34 @@ extension NoticeView: UITableViewDelegate {
 }
 
 extension NoticeView: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        titleList.count
+        notice.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: noticeCell, for: indexPath) as? TableViewCell else {
             return UITableViewCell()
         }
-        cell.label.text = titleList[indexPath.row]
-        cell.noticeImageView.image = UIImage(named: imageList[indexPath.row])
-        cell.textView.text = notificationBodyList?[indexPath.row]
+
+        cell.titleImageView.image = UIImage(named: notice[indexPath.row].notificationType.rawValue)
+        cell.periodStartLabel.text = String(notice[indexPath.row].periodStart)
+        cell.bodyLabel.text = notice[indexPath.row].notificationBody
+
+        let imageUrlString = notice[indexPath.row].imageUrl
+        if let url = URL(string: imageUrlString) {
+            getImageFromURL(url: url) { image in
+                if let image = image {
+                    cell.bannerImageView.image = image
+                } else {
+                    print("画象変換失敗")
+                }
+            }
+        }
+
         return cell
     }
 

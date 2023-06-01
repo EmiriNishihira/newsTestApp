@@ -11,12 +11,10 @@
 		FD87AC442A257CF50086C0ED /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC432A257CF50086C0ED /* NoticeView.swift */; };
 		FD87AC462A257D010086C0ED /* NoticeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD87AC452A257D010086C0ED /* NoticeView.xib */; };
 		FD87AC482A257D2A0086C0ED /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC472A257D2A0086C0ED /* NibView.swift */; };
-		FD87AC4A2A257EED0086C0ED /* NotiveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC492A257EED0086C0ED /* NotiveBackgroundView.swift */; };
+		FD87AC4A2A257EED0086C0ED /* NoticeBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC492A257EED0086C0ED /* NoticeBackgroundView.swift */; };
 		FD87AC4C2A257EFA0086C0ED /* NoticeBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD87AC4B2A257EFA0086C0ED /* NoticeBackgroundView.xib */; };
 		FD87AC632A2586BD0086C0ED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC612A2586BD0086C0ED /* TableViewCell.swift */; };
 		FD87AC642A2586BD0086C0ED /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD87AC622A2586BD0086C0ED /* TableViewCell.xib */; };
-		FD87AC6A2A25B5640086C0ED /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC692A25B5640086C0ED /* NewsView.swift */; };
-		FD87AC6C2A25B5760086C0ED /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD87AC6B2A25B5760086C0ED /* NewsView.xib */; };
 		FD87AC702A25CC2D0086C0ED /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC6F2A25CC2D0086C0ED /* Notice.swift */; };
 		FD87AC722A25CC530086C0ED /* NoticeBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC712A25CC530086C0ED /* NoticeBannerType.swift */; };
 		FD87AC742A25E76B0086C0ED /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87AC732A25E76B0086C0ED /* ApiEndPoint.swift */; };
@@ -50,12 +48,10 @@
 		FD87AC432A257CF50086C0ED /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		FD87AC452A257D010086C0ED /* NoticeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeView.xib; sourceTree = "<group>"; };
 		FD87AC472A257D2A0086C0ED /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
-		FD87AC492A257EED0086C0ED /* NotiveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiveBackgroundView.swift; sourceTree = "<group>"; };
+		FD87AC492A257EED0086C0ED /* NoticeBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBackgroundView.swift; sourceTree = "<group>"; };
 		FD87AC4B2A257EFA0086C0ED /* NoticeBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeBackgroundView.xib; sourceTree = "<group>"; };
 		FD87AC612A2586BD0086C0ED /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FD87AC622A2586BD0086C0ED /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		FD87AC692A25B5640086C0ED /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
-		FD87AC6B2A25B5760086C0ED /* NewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
 		FD87AC6F2A25CC2D0086C0ED /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		FD87AC712A25CC530086C0ED /* NoticeBannerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBannerType.swift; sourceTree = "<group>"; };
 		FD87AC732A25E76B0086C0ED /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
@@ -176,12 +172,10 @@
 		FD87AC7B2A25EFAD0086C0ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FD87AC492A257EED0086C0ED /* NotiveBackgroundView.swift */,
+				FD87AC492A257EED0086C0ED /* NoticeBackgroundView.swift */,
 				FD87AC4B2A257EFA0086C0ED /* NoticeBackgroundView.xib */,
 				FD87AC432A257CF50086C0ED /* NoticeView.swift */,
 				FD87AC452A257D010086C0ED /* NoticeView.xib */,
-				FD87AC692A25B5640086C0ED /* NewsView.swift */,
-				FD87AC6B2A25B5760086C0ED /* NewsView.xib */,
 				FD87AC472A257D2A0086C0ED /* NibView.swift */,
 			);
 			path = View;
@@ -332,7 +326,6 @@
 				FD87AC642A2586BD0086C0ED /* TableViewCell.xib in Resources */,
 				FDED0ACF2A24926B003CE3D4 /* LaunchScreen.storyboard in Resources */,
 				FD87AC4C2A257EFA0086C0ED /* NoticeBackgroundView.xib in Resources */,
-				FD87AC6C2A25B5760086C0ED /* NewsView.xib in Resources */,
 				FDED0ACC2A24926B003CE3D4 /* Assets.xcassets in Resources */,
 				FDED0ACA2A249269003CE3D4 /* Main.storyboard in Resources */,
 			);
@@ -393,8 +386,7 @@
 				FD87AC742A25E76B0086C0ED /* ApiEndPoint.swift in Sources */,
 				FD960A112A274D04000C3BE3 /* NotificationTypeTranslator.swift in Sources */,
 				FDAD4B612A2601F40044C32B /* ApiResultCode.swift in Sources */,
-				FD87AC4A2A257EED0086C0ED /* NotiveBackgroundView.swift in Sources */,
-				FD87AC6A2A25B5640086C0ED /* NewsView.swift in Sources */,
+				FD87AC4A2A257EED0086C0ED /* NoticeBackgroundView.swift in Sources */,
 				FD87AC722A25CC530086C0ED /* NoticeBannerType.swift in Sources */,
 				FD87AC702A25CC2D0086C0ED /* Notice.swift in Sources */,
 				FDED0AC72A249269003CE3D4 /* ViewController.swift in Sources */,

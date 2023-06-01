@@ -8,10 +8,10 @@
 import Foundation
 
 struct Notice {
-    var notificationType: String
-    var notificationBody: String
-    var imageUrl: String
-    var linkUrl: String
+    var notificationType: NotificationType
+    var notificationBody = ""
+    var imageUrl = ""
+    var linkUrl = ""
     var bannerType: NoticeBannerType
     var periodStart: Int
     
