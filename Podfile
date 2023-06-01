@@ -8,6 +8,7 @@ target 'noticeTestApp' do
   # Pods for noticeTestApp
   pod 'Alamofire', '~> 4.9'
   pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'Kingfisher', '~> 7.6'
 
 
 end

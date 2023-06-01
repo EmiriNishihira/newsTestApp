@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class NoticeView: NibView {
 
@@ -32,20 +33,6 @@ class NoticeView: NibView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: noticeCell)
-    }
-
-    func getImageFromURL(url: URL, completion: @escaping (UIImage?) -> Void) {
-        DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
-                DispatchQueue.main.async {
-                    completion(image)
-                }
-            } else {
-                DispatchQueue.main.async {
-                    completion(nil)
-                }
-            }
-        }
     }
 
 
@@ -75,13 +62,7 @@ extension NoticeView: UITableViewDataSource {
 
         let imageUrlString = notice[indexPath.row].imageUrl
         if let url = URL(string: imageUrlString) {
-            getImageFromURL(url: url) { image in
-                if let image = image {
-                    cell.bannerImageView.image = image
-                } else {
-                    print("画象変換失敗")
-                }
-            }
+                cell.bannerImageView.kf.setImage(with: url)
         }
 
         return cell
